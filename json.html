@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JSON</h1>
+    <h2>Javascript Object Notation</h2>
+    <script>
+        const user = {
+            id: 249,
+            name: 'khadiza',
+            friend: [12,34,56],
+            friendName: ["khadiza", "chowdhury",'onny'],
+            NameofFriend: {
+                name: 'khadiza',
+                age: 23
+            }
+            
+        };
+//toh json hishabe amra jah bujlam ta holo: jodi amaderk string e kokhono convert korte hoy ba string hishabe server e pathate hoy tahole amra stringify use korbo ar amra jokhon data or information recive korbo tokhon parse use korbo..
+        const userJSON = JSON.stringify(user);
+        console.log(userJSON);
+        const userFromJSON = JSON.parse(userJSON);
+        console.log(userFromJSON);
+        
+    </script>
+</body>
+</html>
